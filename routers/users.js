@@ -79,9 +79,9 @@ router.get("/CompanyJobs/:id",async(req,res)=>{
 
 router.get("/job/:id/:id2",async(req,res)=>{
     const post= await Post.findOne({_id:req.params.id}).populate('applications')
-    const post1= await Post.findOne({_id:req.params.id})
+    //const post1= await Post.findOne({_id:req.params.id})
 	if(post){
-        for(let i=0;i<post1.applications.length;i++){if(post1.applications[i]===req.params.id2){
+        for(let i=0;i<post.applications.length;i++){if(post.applications[i].email==req.params.id2){
             res.send({post:post,"is":true})
             
         }}
