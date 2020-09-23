@@ -1,0 +1,48 @@
+<div class="container">
+<h1 class=" bg-info text-center text-light">Jobs Applied..</h1>
+<div class="row mr-3 ml-3">
+
+             <%for (app of user.post){%>
+             
+             
+
+
+
+
+
+
+
+
+
+             <%for(post of posts){%>
+             
+
+                <%if (app==post.id){%>
+                <div class="col-lg-3 col-md-3 col-5 mt-3 border border-light bg2 text-light mr-2>
+                <%for(u of users){%>
+                  <%if(u.id==post.user){%>
+                  Company :<%=u.name%>
+                  <%}%>
+                <%}%>
+                 
+                 <br>
+                 Profile:<%=post.profile%>
+
+                 </div>
+                <%}%>
+            
+
+             <%}%>
+             
+
+             <%}%>
+</div>
+</div>
+
+
+
+
+
+
+
+

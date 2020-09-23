@@ -1,0 +1,45 @@
+
+<div id="posts-container-list" class="container-fluid pt-2  ">
+
+	<div class="section_header text-center h1 bg-primary text-light">
+			<%=x%> Recruiters
+		</div>
+<div class="container " >
+	<div class="row "  >
+		<% for (post of posts) {%>
+		<%if(post.employmentType==x){%>
+
+
+
+		<div class="col-lg-3 col-md-3 col-6 mt-3 border border-light text-light bg2 mr-2">
+
+
+           
+      
+    
+           <p class="pt-2 ">
+             Company:<%=post.user.name %>
+             <br>
+             Profile:<%=post.profile%>
+             <br>
+             Salary :<%=post.salary%> per <%=post.per%>
+             <br>
+             Essentials :<%=post.requirements%>
+             
+             <br>
+             
+
+             
+           </p>
+
+          
+       
+
+		</div>
+		<%}%>
+		 <%}%>
+	</div>
+</div>
+
+  
+</div>
