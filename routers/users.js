@@ -85,7 +85,7 @@ router.get("/job/:id/:id2",async(req,res)=>{
             res.send({post:post,"is":true})
             
         }}
-res.send({post:post})
+res.send({post:post,"is":false})
 
 	}else{
 		res.status(404).send({message:"Job Not found"})
